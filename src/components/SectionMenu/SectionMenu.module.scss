@@ -1,0 +1,43 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  &__item {
+    font-family: "nexa";
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #cecece;
+    &:hover {
+      color: rgb(173, 167, 167);
+    }
+    &:active {
+      color: #cecece;
+    }
+  }
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #bebebe;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .line {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}

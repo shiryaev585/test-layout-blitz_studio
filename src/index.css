@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'opensans';
+  src: url(./fonts/opensans/opensans-regular.woff2) format('woff2'),
+      url(./fonts/opensans/opensans-regular.woff) format('woff'),
+      url(./fonts/opensans/opensans-regular.ttf) format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url(./fonts/opensans/opensans-light.woff2) format('woff2'),
+      url(./fonts/opensans/opensans-light.woff) format('woff'),
+      url(./fonts/opensans/opensans-light.ttf) format('ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nexa';
+  src: url(./fonts/nexa/nexa_light.woff2) format('woff2'),
+      url(./fonts/nexa/nexa_ligh.woff) format('woff'),
+      url(./fonts/nexa/nexa_light.otf) format('otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ptsans';
+  src: url(./fonts/ptsans/ptsans_regular.woff2) format('woff2'),
+      url(./fonts/ptsans/ptsans_regular.woff) format('woff'),
+      url(./fonts/ptsans/ptsans_regular.ttf) format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'opensans', 'ptsans', 'nexa', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

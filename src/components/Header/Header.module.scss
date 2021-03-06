@@ -1,0 +1,40 @@
+.header {
+  background-image: url(../../assets/images/bg_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 53px;
+  &__bottomWrapper {
+      margin: 865px auto 0;
+  }
+  &__scroll {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 0 0 25px 0;
+  }
+  &__img {
+      display: block;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__bottomWrapper {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 42px;
+  }
+}
+
+

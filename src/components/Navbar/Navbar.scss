@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  &__item {
+    font-family: 'ptsans';
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #f1f1f1;
+    &:hover {
+      color: #d8d4d4;
+    }
+    &:active {
+      color: #f1f1f1;
+    }
+  }
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #ffffff;
+  margin: 0 auto;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .line {
+    margin-bottom: 810px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+    margin-bottom: 207px;
+    &__toggle {
+      opacity: 0;
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      height: 26px;
+      z-index: 1;
+    }
+    &__menu {
+      font-family: "ptsans";
+      font-size: 23.8px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      color: #f1f1f1;
+    }
+    &__wrapper {
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      left: -100%;
+      width: 230px;
+      height: 100%;
+      margin: 0;
+      padding: 80px 0;
+      background-color: #eee;
+      box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+      transition-duration: 0.25s;
+    }
+    &__item {
+      font-family: "ptsans";
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      color: #555;
+      transition-duration: 0.25s;
+    }
+  }
+
+  .mobileMenu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  
+  .mobileMenu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  
+  .mobileMenu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  .mobileMenu__toggle:checked ~ .mobileMenu__wrapper {
+    visibility: visible;
+    left: 0;
+  }
+
+  li {
+    padding: 15px;
+  }
+}
